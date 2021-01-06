@@ -7,10 +7,10 @@ var express = require('express')
 	bodyParser=require("body-parser");
 	
 var connection = mysql.createConnection({
-	host     : 'localhost',
-	user     : 'root',
-	password : '',
-	database : '###yourdatabasename###'
+	host     : 'sql5.jnb1.host-h.net',
+	user     : 'khanyim_1',
+	password : 'W65VoIE5vb9w9WsFi2RD',
+	database : 'khanyim_db1'
 });
  
 connection.connect();
@@ -32,4 +32,4 @@ app.get('/', routes.index);//call for main index page
 app.post('/', routes.index);//call for signup post 
 app.get('/profile/:id',routes.profile);
 //Middleware
-app.listen(8080)
+app.listen(3306)
